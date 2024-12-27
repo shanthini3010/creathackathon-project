@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKE BOSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7f0;
+        }
+        header {
+            background-color: #e76f51;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #e76f51;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .menu-item {
+            background-color: #f7d9c4;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            width: 250px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px;
+            background: #ff7f50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background: #e76f51;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cake Boss</h1>
+        <p>Delicious pastries made with love and care</p>
+    </header>
+
+
+    <nav>
+        <a href="#home">Home</a>
+		<a href="#about">About Us</a>
+		<a href="#menucart">Our Menu</a>
+        <a href="#menu">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+		<a href="#contact us">Customer Contact</a>
+    </nav>
+    <img src="C:\Users\Shanthini\Downloads\Pink Cute Sweet Cupcake.png" alt="Sample Image" width="1512" height="540"
+ align="center"><br>
+    <section id="home">
+        <h2>Welcome to CAKE BOSS!</h2>
+        <p>Your go-to place for heavenly pastries.</p>
+    </section>
+    <section id="about">
+    <h2>About Us</h2>
+    <p>At ‘The Bake Shop’ we follow a fairly simple philosophy – offer a product of outstanding quality and ensure customer loyalty. The simplicity of that principle is backed up by a lot of hard work and years of experience. All our products are prepared in a modern semi-automatic factory where we adhere to stringent guidelines of hygiene and cleanliness ensuring a safe and healthy food preparation for all our patrons. We specialize in wide range of Bakery products, savory snacks, Breads and Eggless 100% Veg Cakes We also make Brownies & Macaroons, Donuts, Cupcakes with Icing & Mousse, Tea Time Slice Cakes & Muffins, Puffs & Croissant, Rolls & Sandwiches, Stuffed Buns, Pizza & Calzone, Quiche & Pies, Danish Pastry, Cookies, Kharis & Toast, Breadsticks & Lavash.</p>
+    </section>
+	<section id="menucart">
+    <h2>Our Menu</h2>
+    <img src="C:\Users\Shanthini\Downloads\Cake shop menu.png" alt="Sample Image" width="1470" height="600"
+ align="center"><br>
+    </section>
+    <section id="menu">
+        <h2>Our Products</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and moist chocolate cake.</p>
+                <p><strong>₹80</strong></p>
+                <button class="cart button" onclick="addToCart('Chocolate Cake', 80)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Strawberry Tart</h3>
+                <p>Fresh strawberries on a crispy tart base.</p>
+                <p><strong>₹139</strong></p>
+                <button class="cart button" onclick="addToCart('Strawberry Tart', 139)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Croissant</h3>
+                <p>Flaky and buttery perfection.</p>
+                <p><strong>₹120</strong></p>
+                <button class="cart button" onclick="addToCart('Croissant', 120)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Cup Cakes</h3>
+                <p>Make the world a better place one cupcake at a time.</p>
+                <p><strong>₹85</strong></p>
+                <button class="cart button" onclick="addToCart('Cup Cakes', 85)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Black Forest Cake</h3>
+                <p>Several layers of cake.</p>
+                <p><strong>₹650/kg</strong></p>
+                <button class="cart button" onclick="addToCart('Black Forest Cake', 650)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Choco Lava Cake</h3>
+                <p>Runny core cake.</p>
+                <p><strong>₹99</strong></p>
+                <button class="cart button" onclick="addToCart('Choco Lava Cake', 99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Millet Brownie</h3>
+                <p>Feel it & Delight it</p>
+                <p><strong>₹110/piece</strong></p>
+                <button class="cart button" onclick="addToCart('Millet Brownie', 110)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p><strong>₹180/piece</strong></p>
+                <button class="cart button" onclick="addToCart('Pizza', 180)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Customizable Cakes</h3>
+                <p><strong>Prices change upon customization</strong></p>
+                <button class="cart button" onclick="addToCart('Customizable Cakes', 0)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <li>No items added yet.</li>
+        </ul>
+        <p>Total: ₹<span id="total-price">0.00</span></p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="C:\Users\Shanthini\Pictures\chocolate cake.jpg" alt="Chocolate Cake" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\strawberry tart.jpg" alt="Strawberry Tart" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\croissant.jpg" alt="Croissant" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\cupcakes.jpg" alt="Cup Cakes" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\black forest cake.jpg" alt="Black Forest Cake" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\choco lava cake.jpg" alt="Choco Lava Cake" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\browniee.jpg" alt="Millet Brownie" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\pizza.jpg" alt="Pizza" style="border:double">
+            <img src="C:\Users\Shanthini\Pictures\customisible cakes.jpg" alt="Customizable Cakes" style="border:double">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: cakeboss@gmail.com</p>
+        <p>Phone: 04259 22333</p>
+        <p>Address: 12/12 Sai Baba Colony, Opposite HDFC Bank, Coimbatore</p>
+    </section>
+	<section id="contact us" class="contact">
+    <div class="container">
+      <h2>Customer Contact</h2>
+      <form id="contact-form" onsubmit="return validateForm()"action="submit form.html">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Address" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Cake Boss | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function addToCart(item, price) {
+            cart.push({ item, price });
+            total += price;
+
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            cart.forEach(cartItem => {
+                const li = document.createElement('li');
+                li.textContent = `${cartItem.item} - ₹${cartItem.price}`;
+                cartItems.appendChild(li);
+            });
+
+            const totalPrice = document.getElementById('total-price');
+            totalPrice.textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>
